@@ -5,6 +5,7 @@
 
 .body {
     max-width: 1920px;
+    min-height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -12,8 +13,10 @@
 }
 
 .header {
+    width: 100%;
     height: 160px;
     padding: 0 10px 0 10px;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,9 +34,9 @@
     align-items: center;
 }
 
-/*.logo-image {
-    margin: 0 182px 0 123px;
-}*/
+.logo-image {
+    margin-left: 123px;
+}
 
 .navigation-container {
     left: 0;
@@ -100,15 +103,71 @@
 
 .main {
     max-width: 1170px;
-    height: 550px;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: center;
+    flex-grow: 1;
 }
 
-.title-image {
-    display: none;
+.title-section {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-content {
+    max-width: 553px;
+}
+
+.button-container {
+    width: 357px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-section {
+    margin-top: 190px;
+    width: 100%;
+}
+
+.portfolio-title {
+    max-width: 395px;
+    margin-bottom: 88px;
+}
+
+.portfolio-container {
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.see-more-container {
+    margin-top: 28px;
+}
+
+.contact-us-section {
+    margin-top: 302px;
+}
+
+.message-inf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.message-inf > input {
+    width: 49%;
+}
+
+.footer-navigation {
+    width: 552px;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

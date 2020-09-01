@@ -99,7 +99,7 @@
     padding: 0 10px 0 10px;
 }
 
-.title-container {
+.title-section {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -176,7 +176,7 @@
     width: 100%;
     max-width: 370px;
     height: 280px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     background-color: #c3d0d8;
 }
 
@@ -221,6 +221,10 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.message-inf {
+    width: 100%;
 }
 
 .input-item {
