@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 1400px)">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Doob</title>
 </head>
 <body class="body">
@@ -40,13 +42,30 @@
     </header>
     <main class="main">
         <section class="title-section">
-            <img src="assets/Vector%20Illustration.png" class="title-image" alt="">
-            <div class="title-content">
-                <h1 class="title-text">The Spirit of Digital Agency.</h1>
-                <p class="title-subtext">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
-                <div class="button-container">
-                    <button class="more-about-us-btn">More About us</button>
-                    <button class="get-in-touch-btn">Get in Touch.</button>
+            <div class="title-carousel-item">
+                <div class="item">
+                    <img src="assets/Vector%20Illustration.png" class="title-image" alt="">
+                    <div class="title-content">
+                        <h1 class="title-text">The Spirit of Digital Agency.</h1>
+                        <p class="title-subtext">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                        <div class="button-container">
+                            <button class="more-about-us-btn">More About us</button>
+                            <button class="get-in-touch-btn">Get in Touch.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title-carousel-item" id="slide">
+                <div class="item">
+                    <img src="assets/Vector%20Illustration.png" class="title-image" alt="">
+                    <div class="title-content">
+                        <h1 class="title-text">The Spirit of Digital Agency.</h1>
+                        <p class="title-subtext">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                        <div class="button-container">
+                            <button class="more-about-us-btn">More About us</button>
+                            <button class="get-in-touch-btn">Get in Touch.</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -96,6 +115,8 @@
             </div>
         </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

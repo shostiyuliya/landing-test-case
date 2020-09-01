@@ -99,6 +99,10 @@
     padding: 0 10px 0 10px;
 }
 
+#slide {
+    display: none;
+}
+
 .title-section {
     display: flex;
     flex-flow: column;
