@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 768px)">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Doob</title>
 </head>
-<body>
+<body class="body">
     <header class="header">
+        <div class="hamburger-navigation">
+            <img src="assets/hamburger-menu.png" alt="" class="hamburger-img">
+        </div>
         <div class="logo-container">
-            <img src="assets/Logo.png" alt="Logo image">
+            <img src="assets/Logo.png" alt="Logo image" class="logo-image">
         </div>
         <nav class="navigation-container">
             <div class="navigation-left">
@@ -21,10 +27,71 @@
                 <div class="contact-us">Contact us.</div>
             </div>
             <div class="navigation-right">
-                <div class="language-selection">EN</div>
-                <button class="contact-us-btn">Contact Us</button>
+                <div class="language-selection-btn">
+                    <span class="language-selection-btn-text">EN</span>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <button class="contact-us-btn">
+                    <span class="contact-us-btn-text">Contact Us</span>
+                    <img src="assets/Arrow.png" alt="">
+                </button>
             </div>
         </nav>
     </header>
+    <main class="main">
+        <img src="assets/Vector%20Illustration.png" class="title-image" alt="">
+        <section class="title-container">
+            <h1 class="title-text">The Spirit of Digital Agency.</h1>
+            <p class="title-subtext">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+            <div class="button-container">
+                <button class="more-about-us-btn">More About us</button>
+                <button class="get-in-touch-btn">Get in Touch.</button>
+            </div>
+        </section>
+        <section class="portfolio-section">
+            <h2 class="portfolio-title">See some of our Creative work.</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+                <div class="portfolio-item"></div>
+            </div>
+            <div class="see-more-container">
+                <button class="see-more-btn">See More of These.</button>
+            </div>
+        </section>
+        <section class="contact-us-section">
+            <h3 class="contact-title">CONTACT US</h3>
+            <h2 class="contact-form-title">Get in Touch</h2>
+            <form class="contact-form">
+                <input type="email" class="input-item" id="email" placeholder="Your email">
+                <input type="text" class="input-item" id="subject" placeholder="Subject">
+                <input type="text" class="input-item" id="message-text" placeholder="Message here...">
+                <button class="send-msg-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <h3 class="company-name">DOOB</h3>
+            <p class="creativity-above-text">CREATIVITY  ABOVE</p>
+            <div class="footer-navigation">
+                <div class="footer-home">Home.</div>
+                <div class="footer-about-us">About us.</div>
+                <div class="footer-portfolio">Portfolio.</div>
+                <div class="footer-blog">Blog.</div>
+                <div class="footer-contact-us">Contact us.</div>
+            </div>
+            <p class="copyright">© 2019 - Doob, All Right Reserved</p>
+            <div class="social-container">
+                <img src="assets/Facebook.png" alt="Facebook icon">
+                <img src="assets/Twitter.png" alt="Twitter icon">
+                <img src="assets/Dribble.png" alt="Dribble icon">
+            </div>
+        </section>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
