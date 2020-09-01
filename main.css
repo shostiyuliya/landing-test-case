@@ -10,6 +10,10 @@
 
 .header {
     width: 100%;
+    background-color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
     height: 50px;
     display: flex;
     align-items: center;
@@ -17,8 +21,8 @@
 }
 
 .hamburger-navigation {
-    position: fixed;
-    left: 5px;
+    position: absolute;
+    left: 10px;
     cursor: pointer;
     z-index: 100;
 }
@@ -192,7 +196,7 @@
 }
 
 .contact-us-section {
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -239,7 +243,7 @@
 }
 
 .send-msg-btn {
-    margin: 66px 0 60px 0;
+    margin: 50px 0 60px 0;
     width: 200px;
     height: 56px;
     background-color: #ff3946;
