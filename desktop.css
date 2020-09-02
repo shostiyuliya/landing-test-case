@@ -130,6 +130,10 @@
     /*width: 100%;*/
 }
 
+#slide {
+    display: block;
+}
+
 .title-content {
     max-width: 553px;
 }
