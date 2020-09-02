@@ -6,20 +6,6 @@ $('.navigation-left > div, .navigation-right div, button').click(() => {
   $('.navigation-container').removeClass('navigation-active');
 });
 
-/*$(document).ready(() => {
-  const slide = document.querySelector('#slide');
-  if (slide) {
-    $('.title-section').not('.slick-initialized').slick({
-      dots: true,
-      arrows: false,
-    });
-  } else {
-    if($('.title-section').hasClass('slick-initialized')) {
-      $('.title-section').slick('unslick');
-    }
-  }
-})*/
-
 $(window).on('load resize', () => {
   const width = $(document).width();
 
