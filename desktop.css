@@ -13,6 +13,10 @@
 }
 
 .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50px;
     margin: 0;
 }
 
