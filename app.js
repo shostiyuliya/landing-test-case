@@ -7,10 +7,18 @@ $('.navigation-left > div, .navigation-right div, button').click(() => {
 });
 
 $(document).ready(() => {
-  $('.title-section').slick({
-    dots: true,
-    arrows: false,
-  })
+  const width = $(document).width();
+
+  if (width > 768) {
+    $('.title-section').not('.slick-initialized').slick({
+      dots: true,
+      arrows: false,
+    });
+  } else {
+    if($('.title-section').hasClass('slick-initialized')) {
+      $('.title-section').slick('unslick');
+    }
+  }
 })
 
 $(window).on('load resize', () => {
